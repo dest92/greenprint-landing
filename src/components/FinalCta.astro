@@ -1,36 +1,36 @@
 ---
-import Few from "../assets/few.svg";
 
 const testimonials = [
     {
         image:
-            "../../public/images/Images12.jpg",
+            "Images12.jpg",
         quote:
             "Greenprint ha revolucionado nuestra producción. Con sus sistemas hidropónicos, hemos reducido el uso de agua y eliminado los químicos. La frescura y calidad de los cultivos son inigualables.",
         name: "Roberto Méndez, Gerente de Producción @EcoFarms",
     },
     {
         image:
-            "../../public/images/Image10.png",
+            "Image10.png",
         quote:
             "Gracias a Greenprint puedo cultivar en mi apartamento. Ahora disfruto de alimentos frescos y sin pesticidas, y me encanta ser parte de un modelo sostenible.",
         name: "Laura Gómez, Cliente Urbana",
     },
     {
         image:
-            "../../public/images/Image3.jpg",
+            "Image3.jpg",
         quote:
             "Implementamos Greenprint en nuestra empresa y ha sido un éxito. Los clientes valoran el enfoque sin químicos y nuestro equipo se ha adaptado rápidamente al sistema.",
         name: "María Villanueva, CEO @UrbanHarvest Co.",
     },
     {
         image:
-            "../../public/images/Image13.jpg",
+            "Image13.jpg",
         quote:
             "Los sistemas de Greenprint nos permitieron expandir nuestra granja vertical sin gastar en pesticidas o fertilizantes. Ahora, nuestros cultivos son 100% naturales.",
         name: "Ignacio Ruiz, Fundador @VerdeCity",
     },
 ];
+
 ---
 
 <style>
@@ -64,7 +64,7 @@ const testimonials = [
                     <!-- Imagen del cliente -->
                     <div class="relative w-60 h-60 flex-shrink-0">
                         <img
-                            src={testimonial.image}
+                            src={"/images/" + testimonial.image}
                             alt="Customer"
                             class="w-full h-full object-cover rounded-2xl customer-image"
                         />
